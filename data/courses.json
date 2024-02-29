@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Introduction to Javascript",
+    "level": "Beginner",
+    "description": "Learn the basics of Javascript"
+  },
+  {
+    "id": 2,
+    "title": "Introduction to Machine Learning",
+    "level": "Beginner",
+    "description": "Learn the basics of Machine Learning"
+  }
+]
