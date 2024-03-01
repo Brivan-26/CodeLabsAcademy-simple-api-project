@@ -1,0 +1,7 @@
+GET: curl http://localhost:3000/courses
+
+DELETE: curl -X DELETE http://localhost:3000/courses/<ID>
+
+POST: curl -X POST http://localhost:3000/courses \                                           
+-H "Content-Type: application/json" \
+-d '{"id": 3, "title": "Introduction to Data Science", "description": "Introduction to Data Science", "level": "Beginner"}'

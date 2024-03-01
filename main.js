@@ -1,16 +1,16 @@
 const express = require("express");
-const coursesRouter = require("./routes/coursesRoutes");
-
+const coursesRouter = require("./routes/coursesRouter");
 const app = express();
-const port = process.env.PORT || 3000;
 
-// Middleware to handle invalid JSON payloads
-app.use(express.json({ strict: true })); // Throws error for invalid or missing JSON bodies
+const port = 3000;
 
-// Make use of our custom route
+app.use(express.json({ strict: true }));
+
+// GET: /courses => get all courses
+// POST: /courses => add a new course
+// DELETE: /courses/:id => delete a new course
 app.use("/courses", coursesRouter);
 
-// Start the server
 app.listen(port, () => {
-  console.log(`Server is listening on port ${port}`);
+  console.log(`Server is listening on port: ${port}`);
 });
